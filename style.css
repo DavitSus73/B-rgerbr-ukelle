@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playwrite+CU:wght@100..400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.6rem;
+    background-color: #6b2e1f;
+    animation: slideDown 1s ease-out forwards;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Imperial Script", cursive;
+    font-size: 10rem;
+    color: white;
+}
+
+.img {
+    width: 35%;
+}
+
+.nav-menu-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    font-size: 7rem;
+}
+
+.nav-menu-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu-links a:hover {
+    color: #f0c14b;
+}
+
+.hero-section {
+    background: url("./images/beer bar background image.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.hero-text-box {
+    width: 70rem;
+}
+
+h1 {
+    font-size: 15rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+    font-style: italic;
+    animation: zoomIn 1.5s ease-out forwards;
+}
+
+.hero-text {
+    font-size: 5rem;
+    margin-bottom: 3.5rem;
+    color: white;
+    animation: zoomIn 1.5s ease-out forwards;
+}
+
+.hero-text-box button {
+    background-color: #f0c14b;
+    color: #6b2e1f;
+    border: none;
+    padding: 3.5rem 7rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 0.3s, transform 0.3s;
+    animation: zoomIn 1.5s ease-out forwards;
+}
+
+.hero-text-box button:hover {
+    background-color: #d4a017;
+    transform: scale(1.05);
+}
+
+/* animations */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown1 {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    margin-top: 5rem;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.menu-table {
+    width: 90%;
+    margin: 0 auto 6rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-table th,
+.menu-table td {
+    padding: 3rem 5rem;
+    text-align: center;
+    font-size: 4.5rem;
+    border: 0.1rem solid black;
+}
+
+.menu-table thead {
+    background-color: #6b2e1f;
+    color: #fff;
+    font-size: 2rem;
+}
+
+footer {
+    background-color: #6b2e1f;
+    color: white;
+    font-family: "Imperial Script", cursive;
+    text-align: center;
+    padding: 2rem;
+    animation: slideDown1 1s ease-out forwards;
+}
+
+.footer-logo {
+    font-family: "Imperial Script", cursive;
+    font-size: 5rem;
+}
+
+.footer-p {
+    font-family: "Imperial Script", cursive;
+    font-size: 4rem;
+}
